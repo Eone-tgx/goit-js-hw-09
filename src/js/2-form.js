@@ -30,8 +30,8 @@ refs.form.addEventListener('submit', e => {
     alert('Fill please all fields');
     return;
   }
-  const email = e.currentTarget.elements.email.value;
-  const message = e.currentTarget.elements.message.value;
+  const email = e.currentTarget.elements.email.value.trim();
+  const message = e.currentTarget.elements.message.value.trim();
   formData.email = email;
   formData.message = message;
   console.log(formData);
